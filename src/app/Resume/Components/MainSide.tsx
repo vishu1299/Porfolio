@@ -48,7 +48,7 @@ function MainSide() {
                             <div className="pl-8">
                                 <p className="text-gray-400">2023 — Present</p>
                                 <h3 className="text-white text-lg font-semibold">MCA(Masters of Computer Application)</h3>
-                                <p className="text-gray-500">Doing Master's Degree in Computer science from Ganga Institute of Technology and Management – Jhajjar,HR</p>
+                                <p className="text-gray-500">Doing Masters Degree in Computer science from Ganga Institute of Technology and Management – Jhajjar,HR</p>
                             </div>
                         </div>
                         <div className="mb-10 ">
@@ -92,7 +92,7 @@ function MainSide() {
                                 <h3 className="text-white text-lg font-semibold">Frontend Developer</h3>
                                 <p className="text-gray-500">I currently hold the position of Frontend Developer, focusing on Various Projects employing a diverse array of technologies</p>
                                 <br />
-                                <p className="text-gray-500">Within this role, I've been responsible for designing and
+                                <p className="text-gray-500">Within this role, I have been responsible for designing and
                                     implementing the website interface, ensuring optimal
                                     functionality across various devices, including mobile, desktop, and tablets.</p>
                             </div>

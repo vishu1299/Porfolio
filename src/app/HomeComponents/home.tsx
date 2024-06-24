@@ -47,7 +47,7 @@ function Home() {
                         </p>
                     </section>
                     <div className="pt-8">
-                        <h1 className='text-white text-[24px] font-semibold  '>What i'm doing</h1>
+                        <h1 className='text-white text-[24px] font-semibold  '>What i am doing</h1>
                         <section className="grid grid-cols-2 gap-4 pt-6 gap-y-5">
                             <div className="flex gap-3 bg-[#212123] rounded-xl p-6 shadow-custom">
                                 <div className="">
