@@ -24,16 +24,16 @@ function Home() {
     ]
     return (
         <>
-            <div className="bg-[#1E1E1F] h-auto pb-5 w-[67%] rounded-xl border border-[#383838] shadow-custom ">
+            <div className="bg-[#1E1E1F] h-auto pb-5 xl:w-[67%]  rounded-xl border border-[#383838] shadow-custom mt-8 xl:mt-0 ">
                 {nav.map((Value, index) => (
-                    <div key={index} className="flex justify-end  gap-x-6 p-3 bg-[#282829] nav_radius ">
+                    <div key={index} className="xl:flex justify-end  gap-x-6 p-3 bg-[#282829] nav_radius hidden">
                         <Link className='text-[#E3C08D]' href='#'>{Value.head1}</Link>
                         <Link className='text-white hover:text-[#E3C08D]' href='../Resume'>{Value.head2}</Link>
                         <Link className='text-white hover:text-[#E3C08D]' href=''>{Value.head3}</Link>
                         <Link className='text-white hover:text-[#E3C08D]' href=''>{Value.head4}</Link>
                     </div>
                 ))}
-                <div className="p-8">
+                <div className="xl:p-8 p-3">
                     <h1 className='article-title text-white text-[32px] font-bold relative pb-[7px] '>About Me</h1>
                     <section className="text-[14px] text-gray-300 leading-5	pt-5">
                         <p>
@@ -48,8 +48,8 @@ function Home() {
                     </section>
                     <div className="pt-8">
                         <h1 className='text-white text-[24px] font-semibold  '>What i am doing</h1>
-                        <section className="grid grid-cols-2 gap-4 pt-6 gap-y-5">
-                            <div className="flex gap-3 bg-[#212123] rounded-xl p-6 shadow-custom">
+                        <section className="grid grid-cols-1 xl:grid-cols-2 gap-4 pt-6 gap-y-5">
+                            <div className="flex flex-col xl:flex-row gap-3 bg-[#212123] rounded-xl p-6 shadow-custom">
                                 <div className="">
                                     <Image
                                         height={100}

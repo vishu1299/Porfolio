@@ -47,8 +47,8 @@ function MainSide() {
                             <div className="absolute -left-2 border-[3px] border-gray-700 rounded-full drop-shadow-xl bg-yellow-500 w-4 h-4"></div>
                             <div className="pl-8">
                                 <p className="text-gray-400">2023 — Present</p>
-                                <h3 className="text-white text-lg font-semibold">MCA(Masters of Computer Application)</h3>
-                                <p className="text-gray-500">Doing Masters Degree in Computer science from Ganga Institute of Technology and Management – Jhajjar,HR</p>
+                                <h3 className="text-white text-lg font-semibold">MCA (Masters of Computer Application)</h3>
+                                <p className="text-gray-500">Pursuing my Masters Degree in Computer science from Ganga Institute of Technology and Management – Jhajjar,HR</p>
                             </div>
                         </div>
                         <div className="mb-10 ">
