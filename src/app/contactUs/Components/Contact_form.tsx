@@ -21,15 +21,15 @@ function Contact_form() {
       </h1>
       <form className="pt-10" onSubmit={handleSubmit(onSubmit)}>
         <div className="flex flex-col gap-y-4">
-          <div className="flex justify-between">
+          <div className="flex justify-between gap-y-5 flex-col sm:flex-row">
             <div className="">
               <input
-                className="border border-gray-500 bg-transparent text-white p-2 rounded-lg w-[22rem] placeholder:text-gray-500 pl-3 "
-                placeholder="Enter name here"
+                className="border border-gray-500 bg-transparent text-white p-2 rounded-lg lg:w-[22rem] w-full placeholder:text-gray-500 pl-3 sm:w-[18rem]"
+                placeholder="Enter name here..."
                 autoFocus
                 type="text"
                 {...register("name", {
-                  required: "true",
+                  required: "This field is required",
                   minLength: {
                     value: 3,
                     message: "Please enter Complete name ",
@@ -41,29 +41,41 @@ function Contact_form() {
                 })}
               />
               {errors.name && (
-                <p className="text-red-500">This field is required</p>
+                <p className="text-red-500 pt-2 pb-2">
+                  {errors.name.message as string}
+                </p>
               )}
             </div>
             <div className="">
               <input
-                className="border border-gray-500 bg-transparent text-white p-2 rounded-lg w-[22rem] placeholder:text-gray-500 pl-3"
-                placeholder="Enter Email here"
+                className="border border-gray-500 bg-transparent text-white p-2 rounded-lg lg:w-[22rem] w-full placeholder:text-gray-500 pl-3 sm:w-[18rem]"
+                placeholder="Enter Email here..."
                 type="text"
                 {...register("email", {
-                  required: "true",
+                  required: "this field is required",
                   pattern: {
                     value: /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/,
                     message: "Invalid email address",
                   },
                 })}
               />
+              {/* {errors.email && (
+                <p >This field is required</p>
+              )} */}
               {errors.email && (
-                <p className="text-red-500">This field is required</p>
+                <p className="text-red-500 pt-2 pb-2">
+                  {errors.email.message as string}
+                </p>
               )}
             </div>
           </div>
         </div>
-        <button type="submit">Submit</button>
+        <button
+          className="text-orange-400 bg-[#202022] shadow-custom  rounded-xl p-3 border-t-[1px] border-l-[1px] border-[#3A3A3A] mt-5"
+          type="submit"
+        >
+          Send Message
+        </button>
       </form>
     </>
   );
