@@ -24,7 +24,7 @@ function Contact_form() {
           <div className="flex justify-between gap-y-5 flex-col sm:flex-row">
             <div className="">
               <input
-                className="border border-gray-500 bg-transparent text-white p-2 rounded-lg lg:w-[22rem] w-full placeholder:text-gray-500 pl-3 sm:w-[18rem]"
+                className="border border-gray-500 bg-transparent text-white p-2 rounded-lg lg:w-[24rem] w-full placeholder:text-gray-500 pl-3 sm:w-[18rem]"
                 placeholder="Enter name here..."
                 autoFocus
                 type="text"
@@ -35,7 +35,7 @@ function Contact_form() {
                     message: "Please enter Complete name ",
                   },
                   maxLength: {
-                    value: 10,
+                    value: 20,
                     message: "Enter valid name  ",
                   },
                 })}
@@ -48,7 +48,7 @@ function Contact_form() {
             </div>
             <div className="">
               <input
-                className="border border-gray-500 bg-transparent text-white p-2 rounded-lg lg:w-[22rem] w-full placeholder:text-gray-500 pl-3 sm:w-[18rem]"
+                className="border border-gray-500 bg-transparent text-white p-2 rounded-lg lg:w-[24rem] w-full placeholder:text-gray-500 pl-3 sm:w-[18rem]"
                 placeholder="Enter Email here..."
                 type="text"
                 {...register("email", {
@@ -59,15 +59,34 @@ function Contact_form() {
                   },
                 })}
               />
-              {/* {errors.email && (
-                <p >This field is required</p>
-              )} */}
               {errors.email && (
                 <p className="text-red-500 pt-2 pb-2">
                   {errors.email.message as string}
                 </p>
               )}
             </div>
+          </div>
+          <div className="">
+            <textarea
+              className="border border-gray-500 bg-transparent text-white p-2 rounded-lg h-[10rem] w-full placeholder:text-gray-500 pl-3 "
+              placeholder="Enter message here..."
+              {...register("message", {
+                required: "This field is required",
+                minLength: {
+                  value: 5,
+                  message: "Message Cannot be less then 5 words",
+                },
+                maxLength: {
+                  value: 50,
+                  message: "Message Cannot be more then 50 words",
+                },
+              })}
+            />
+            {errors.message && (
+              <p className="text-red-500 pt-2 pb-2">
+                {errors.message.message as string}
+              </p>
+            )}
           </div>
         </div>
         <button
