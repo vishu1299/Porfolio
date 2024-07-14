@@ -1,10 +1,10 @@
 import React from "react";
-import MainSide from "./Components/MainSide";
+import Projects from "./Components/Projects";
 
 function page() {
   return (
     <>
-      <MainSide />
+      <Projects />
     </>
   );
 }

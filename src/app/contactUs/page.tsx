@@ -1,10 +1,10 @@
 import React from "react";
-import MainSide from "./Components/MainSide";
+import Map from "./Components/Map";
 
 function page() {
   return (
     <>
-      <MainSide />
+      <Map />
     </>
   );
 }
